@@ -11,4 +11,7 @@ router.post(
   ourServiceController.createOurService
 );
 
+router.get('/get-our-service', ourServiceController.getOurService);
+router.get('/get-active-service', ourServiceController.getActiveService);
+
 export const ourServiceRoutes = router;
