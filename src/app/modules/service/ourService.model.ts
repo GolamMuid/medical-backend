@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
-import { IBanner, bannerModel } from './banner.interface';
+import { IOurService, ourServiceModel } from './ourService.interface';
 
-const bannerSchema = new Schema<IBanner>(
+const ourServiceSchema = new Schema<IOurService>(
   {
     title: {
       type: String,
@@ -24,4 +24,7 @@ const bannerSchema = new Schema<IBanner>(
   }
 );
 
-export const Banner = model<IBanner, bannerModel>('Banner', bannerSchema);
+export const OurService = model<IOurService, ourServiceModel>(
+  'OurService',
+  ourServiceSchema
+);
