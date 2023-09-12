@@ -1,5 +1,6 @@
 import express from 'express';
 import { BannerRoutes } from '../modules/banner/banner.route';
+import { GalleryRoutes } from '../modules/gallery/gallery.route';
 import { InformationRoutes } from '../modules/information/information.route';
 import { ourServiceRoutes } from '../modules/service/ourService.route';
 
@@ -17,6 +18,10 @@ const moduleRoutes = [
   {
     path: '/information',
     route: InformationRoutes,
+  },
+  {
+    path: '/gallery',
+    route: GalleryRoutes,
   },
 ];
 
